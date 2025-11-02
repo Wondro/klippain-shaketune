@@ -22,7 +22,7 @@ preflight_checks() {
     echo "[ERROR] Python 3 is not installed. Please install Python 3!"
     exit 1
   fi
-  if systemctl list-units --full -all -t service --no-legend | grep -Fq 'klipper.service'; then
+  if systemctl list-units --full -all -t service --no-legend | grep -F 'klipper.service'; then
     printf "[PRE-CHECK] Klipper service found! Continuing...\n\n"
   else
     echo "[ERROR] Klipper service not found. Install Klipper first!"

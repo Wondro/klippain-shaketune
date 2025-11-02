@@ -1,8 +1,10 @@
 {
-    "debian": [
-        "python3-venv",
-        "python3-numpy",
-        "python3-matplotlib",
-        "libopenblas-dev"
-    ]
+  "debian": [
+    "python3-venv",
+    "python3-pip",
+    "build-essential",
+    "gfortran",
+    "libopenblas-dev",
+    "liblapack-dev"
+  ]
 }
